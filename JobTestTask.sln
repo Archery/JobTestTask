@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividendsCalculation", "DividendsCalculation\DividendsCalculation.csproj", "{23076729-8598-4E84-9E19-CBA21FD6A955}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DividendsCalculation", "DividendsCalculation\DividendsCalculation.csproj", "{23076729-8598-4E84-9E19-CBA21FD6A955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividendsCalculationTests", "DividendsCalculationTests\DividendsCalculationTests.csproj", "{9DACCAA0-C384-4772-80C4-7B3128C596A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{23076729-8598-4E84-9E19-CBA21FD6A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23076729-8598-4E84-9E19-CBA21FD6A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23076729-8598-4E84-9E19-CBA21FD6A955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DACCAA0-C384-4772-80C4-7B3128C596A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DACCAA0-C384-4772-80C4-7B3128C596A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DACCAA0-C384-4772-80C4-7B3128C596A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DACCAA0-C384-4772-80C4-7B3128C596A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
