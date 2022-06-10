@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="C:\Users\rudak\.nuget\packages\mew.logandeventhelper\1.0.0.7-beta\contentFiles\any\net5.0\logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Mew.LogAndEventHelper" Version="1.0.0.7-beta" />
   </ItemGroup>
 

@@ -4,9 +4,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DividendsCalculation.Tests {
     [TestClass()]
     public class DividendsManagerTests {
-        [TestMethod()]
-        public void DividendsManagerTest() {
-            Assert.Fail();
+        [TestInitialize]
+        public void StartTest() {
+            Mew.AppLogAndEventHelper.Instance.AddReceiver(Mew.Recievers.DebugConsoleWrite);
         }
 
         [TestMethod,
@@ -21,8 +21,11 @@ namespace DividendsCalculation.Tests {
                 InvestmentDuration = N,
                 InterestRate = R,
             };
+            Mew.AppLogAndEventHelper.Instance.RaiseDebugInfo(start_date.Value, calc_date.Value, X, R, N, result);
             var r = dm.CalculateTotalInterest(calc_date.Value);
-            Assert.AreEqual(result, r);
+            Mew.AppLogAndEventHelper.Instance.RaiseDebugInfo(r);
+
+            Assert.IsTrue(Math.Abs(result - r) / result <= 0.001);
         }
     }
 }
