@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Mew;
 
 namespace DividendsCalculation {
     public class DividendsManager {
@@ -27,11 +24,11 @@ namespace DividendsCalculation {
             }
         }
 
-        public double InterestRate {//R
+        public double InterestRate { //R
             get => this.interestRate_;
             set {
                 Debug.Assert(value > 0, "Interest rate (R) must be positive");
-                this.interestRate_ = value;
+                this.interestRate_ = value > 1 ? value / 100.0 : value;
             }
         }
 
@@ -40,25 +37,36 @@ namespace DividendsCalculation {
         public DividendsManager() { }
 
         public double CalculateTotalInterest(DateTime calculation_date) {
-            //Коэффициент аннуитета
-            var ka = 
-            var period_payment = 
-
-            throw new NotImplementedException();
-        }
-
-        public class Dividend {
-            public DateTime Date { get; private set; }
-            public double InterestPayment { get; private set; }
-            public double PrincipalPayment { get; private set; }
-            public double DebtRest { get; private set; }
-
-            public Dividend(DateTime date, double interest_payment, double principal_payment, double debt_rest) {
-                this.Date = date;
-                this.InterestPayment = interest_payment;
-                this.PrincipalPayment = principal_payment;
-                this.DebtRest = debt_rest;
+            if (this.AgreementDate.AddYears(this.InvestmentDuration) < calculation_date) {
+                AppLogAndEventHelper.Instance.RaiseEvent(EventType.Result, "Everything was payed");
+                return 0;
             }
+
+            // по формулам из википедии, за правильность ручаться трудно
+            //ka - Коэффициент аннуитета, m: выплаты производятся постнумерандо m раз в год в течение n лет 
+            const int period = 30;
+            const int m = 365 / period;
+            var p1 = Math.Pow(1 + this.InterestRate, 1d / m);
+            var k = this.InvestmentDuration * m;
+            var ka = Math.Pow(p1, k) * (p1 - 1) / (Math.Pow(p1, k) - 1);
+            var payment_amount = this.InvestedSum * ka;
+            AppLogAndEventHelper.Instance.RaiseDebugInfo(p1, k, ka, payment_amount);
+
+            var day = this.AgreementDate;
+            var debt_rest = this.InvestedSum;
+            var interest_sum = 0d;
+            while (debt_rest > 0) {
+                day = day.AddDays(period);
+                var interest_amount = (p1 - 1) * debt_rest;
+                debt_rest -= payment_amount;
+
+                if (day < calculation_date) continue;
+
+                AppLogAndEventHelper.Instance.RaiseInfo($"{day:yyyy-MM-dd}  %={interest_amount:C}  {payment_amount - interest_amount}  {debt_rest}");
+                interest_sum += interest_amount;
+            }
+
+            return interest_sum;
         }
     }
 }

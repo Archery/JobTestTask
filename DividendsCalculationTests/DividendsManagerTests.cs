@@ -21,9 +21,8 @@ namespace DividendsCalculation.Tests {
                 InvestmentDuration = N,
                 InterestRate = R,
             };
-
-            Assert.AreEqual(result, dm.CalculateTotalInterest(calc_date.Value));
-            Assert.Fail();
+            var r = dm.CalculateTotalInterest(calc_date.Value);
+            Assert.AreEqual(result, r);
         }
     }
 }
