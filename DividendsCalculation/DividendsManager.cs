@@ -58,11 +58,11 @@ namespace DividendsCalculation {
             while (debt_rest > 0.01) {
                 day = day.AddDays(period);
                 var interest_amount = (p1 - 1) * debt_rest;
-                debt_rest -= (payment_amount - interest_amount);
+                debt_rest -= payment_amount - interest_amount;
 
                 if (day < calculation_date) continue;
 
-                AppLogAndEventHelper.Instance.RaiseInfo($" {day:yyyy-MM-dd} {interest_amount:F2} {(payment_amount - interest_amount):F2} {debt_rest:F2}");
+                AppLogAndEventHelper.Instance.RaiseInfo($" {day:yyyy-MM-dd} {interest_amount:F2} {payment_amount - interest_amount:F2} {debt_rest:F2}");
                 interest_sum += interest_amount;
             }
 
