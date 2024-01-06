@@ -1,0 +1,61 @@
+﻿Referral Name;Location;Item Type;Qty/Hours;Ticket Count;Avg Ticket Total;Gross Sales;Discounts;Discounted Sales
+Yelp;Mr Fix Virginia Beach;Accessories;3;3;18.32;54.97;0;54.97
+Yelp;Mr Fix Stony;Accessories;1;1;19.99;19.99;0;19.99
+Yelp;Mr Fix Hampton;Accessories;1;1;19.99;19.99;0;19.99
+Walk-in;Mr Fix Virginia Beach;Accessories;19;13;30.57;397.38;0;397.38
+Walk-in;Mr Fix Stony;Accessories;10;6;43.32;259.93;0;259.93
+Walk-in;Mr Fix Norfolk;Accessories;107;86;24.58;2114.25;0;2114.25
+Walk-in;Mr Fix Hampton;Accessories;192;149;31.6;4707.82;0;4707.82
+Walk-in;Mr Fix Great Bridge;Accessories;155;119;28.8;3427.68;0;3427.68
+Walk-in;Mr Fix Charlottesville;Accessories;22;21;22.04;462.94;0;462.94
+Verizon;Mr Fix Stony;Accessories;1;1;24.99;24.99;0;24.99
+Verizon;Mr Fix Hampton;Accessories;1;1;19.99;19.99;0;19.99
+Verizon;Mr Fix Charlottesville;Accessories;1;1;24.99;24.99;0;24.99
+Unspecified Customer;Mr Fix Stony;Accessories;1;1;20;20;0;20
+Unspecified Customer;Mr Fix Hampton;Accessories;1;1;0;0;0;0
+T-Mobile;Mr Fix Stony;Accessories;3;3;19.99;59.98;0;59.98
+T-Mobile;Mr Fix Great Bridge;Accessories;6;5;23.99;119.94;0;119.94
+T-Mobile;Mr Fix Charlottesville;Accessories;5;3;40.32;120.97;0;120.97
+Sprint;Mr Fix Charlottesville;Accessories;1;1;19.99;19.99;0;19.99
+Returning Customer;Mr Fix Stony;Accessories;13;12;23.74;284.9;0;284.9
+Returning Customer;Mr Fix Norfolk;Accessories;2;2;22.49;44.98;0;44.98
+Returning Customer;Mr Fix Hampton;Accessories;22;21;24.04;504.8;5;499.8
+Returning Customer;Mr Fix Great Bridge;Accessories;2;1;25;25;0;25
+Returning Customer;Mr Fix Charlottesville;Accessories;10;7;27.84;194.91;0;194.91
+Other;Mr Fix Stony;Accessories;1;1;19.99;19.99;0;19.99
+Other;Mr Fix Hampton;Accessories;5;4;28.74;114.95;0;114.95
+Other;Mr Fix Charlottesville;Accessories;1;1;19.99;19.99;0;19.99
+Not Specified;Mr Fix Virginia Beach;Accessories;39;33;22.55;744.05;0;744.05
+Not Specified;Mr Fix Stony;Accessories;261;198;26.74;5293.79;10;5283.79
+Not Specified;Mr Fix Norfolk;Accessories;460;370;26.21;9697;0;9697
+Not Specified;Mr Fix Hampton;Accessories;1090;878;26.76;23497.93;35;23462.93
+Not Specified;Mr Fix Great Bridge;Accessories;187;162;21.25;3442.63;0;3442.63
+Not Specified;Mr Fix Charlottesville;Accessories;1226;972;27.73;26954.76;15;26939.76
+Military base;Mr Fix Hampton;Accessories;1;1;14.99;14.99;0;14.99
+Mailer;Mr Fix Stony;Accessories;1;1;19.99;19.99;0;19.99
+MAILER;Mr Fix Norfolk;Accessories;2;2;25;49.99;0;49.99
+MAILER;Mr Fix Hampton;Accessories;1;1;29.99;29.99;0;29.99
+Mailer;Mr Fix Charlottesville;Accessories;12;9;29.77;267.89;0;267.89
+Google;Mr Fix Virginia Beach;Accessories;15;11;31.35;344.87;0;344.87
+Google;Mr Fix Stony;Accessories;227;183;23.93;4379.45;0;4379.45
+Google;Mr Fix Norfolk;Accessories;283;227;27.56;6256.73;0;6256.73
+Google;Mr Fix Hampton;Accessories;253;202;27.14;5481.58;5;5476.58
+Google;Mr Fix Great Bridge;Accessories;43;34;26.02;884.69;0;884.69
+Google;Mr Fix Charlottesville;Accessories;504;407;26.87;10936.41;21.99;10914.42
+Gamestop;Mr Fix Norfolk;Accessories;1;1;9.99;9.99;0;9.99
+Gamestop;Mr Fix Great Bridge;Accessories;2;1;29.98;29.98;0;29.98
+Gamestop;Mr Fix Charlottesville;Accessories;11;9;24.99;224.9;0;224.9
+Friend/Family/Prev Customer;Mr Fix Hampton;Accessories;9;5;36.98;184.91;0;184.91
+Friend/Family Referral;Mr Fix Stony;Accessories;7;5;28.9;144.48;0;144.48
+Friend/Family Referral;Mr Fix Norfolk;Accessories;3;3;19.99;59.98;0;59.98
+Friend/Family Referral;Mr Fix Hampton;Accessories;43;35;26.23;917.92;0;917.92
+Friend/Family Referral;Mr Fix Great Bridge;Accessories;1;1;19.99;19.99;0;19.99
+Friend/Family Referral;Mr Fix Charlottesville;Accessories;6;5;25.99;129.94;0;129.94
+Facebook;Mr Fix Stony;Accessories;1;1;19.99;19.99;0;19.99
+Facebook;Mr Fix Hampton;Accessories;2;2;27.49;54.98;0;54.98
+Facebook;Mr Fix Great Bridge;Accessories;9;8;26.12;208.92;0;208.92
+Best Buy Mobile;Mr Fix Stony;Accessories;2;1;44.98;44.98;0;44.98
+Batteries n Bulbs;Mr Fix Hampton;Accessories;6;4;42.49;169.94;0;169.94
+AT&T;Mr Fix Stony;Accessories;1;1;19.99;19.99;0;19.99
+AT&T;Mr Fix Hampton;Accessories;3;2;84.99;169.98;0;169.98
+AT&T;Mr Fix Great Bridge;Accessories;5;4;23.74;94.96;0;94.96

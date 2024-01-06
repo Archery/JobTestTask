@@ -1,0 +1,48 @@
+{
+	"folders": {},
+	"connections": {
+		"duckdb_jdbc-18c92a31c52-4f79283c4b71a7c6": {
+			"provider": "generic",
+			"driver": "duckdb_jdbc",
+			"name": "MrFixCell.duckDB",
+			"save-password": true,
+			"navigator-show-only-entities": true,
+			"navigator-hide-folders": true,
+			"navigator-hide-virtual": true,
+			"configuration": {
+				"database": "D:\\Dev\\RubyPascalHaskellEtc\\PowerBI \u0026 Excel \u0026 DB\\Mr Fix Cell - Test Tasks\\MrFixCell.duckDB",
+				"url": "jdbc:duckdb:D:\\Dev\\RubyPascalHaskellEtc\\PowerBI \u0026 Excel \u0026 DB\\Mr Fix Cell - Test Tasks\\MrFixCell.duckDB",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"sqlite_jdbc-18c92b08413-696e0e771e3759c1": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "MrFixCell.sqlite",
+			"save-password": true,
+			"configuration": {
+				"database": "D:\\Dev\\RubyPascalHaskellEtc\\PowerBI \u0026 Excel \u0026 DB\\Mr Fix Cell - Test Tasks\\MrFixCell.sqlite",
+				"url": "jdbc:sqlite:D:\\Dev\\RubyPascalHaskellEtc\\PowerBI \u0026 Excel \u0026 DB\\Mr Fix Cell - Test Tasks\\MrFixCell.sqlite",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
